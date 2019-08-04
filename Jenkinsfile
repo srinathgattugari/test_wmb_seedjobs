@@ -10,7 +10,7 @@ pipeline {
         stage('Building Jenkins Jobs from Master branch of seed-jobs-pf-non-prod repository') {
             steps {
                 checkout scm
-                jobDsl targets: ['jobs/**/*.groovy', 'views/**/*.groovy'].join('\n')
+                jobDsl targets: ['jobs/**/*.groovy'].join('\n')
             }
         }
     }
