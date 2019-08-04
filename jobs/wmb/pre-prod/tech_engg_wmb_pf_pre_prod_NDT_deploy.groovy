@@ -21,7 +21,7 @@ pipelineJob('tech-engg-wmb-pf-pre-prod-NDT-deploy') {
                     branch('master')
                     remote {
                         credentials('jenkins-ci-op')
-                        url('ssh://git@gitlab.deveng.systems:2222/Devops/wmb-pf.git')
+                        url('https://github.com/srinathgattugari/test_wmb_jenkinsfiles.git')
                     }
                 }
             }
